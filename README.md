@@ -12,7 +12,7 @@ Kelas   :TI-1I
 
 ## Experiment 2
 
-
+![GitHub repository screenshot](assets/image1.png)
 
 ## Experiment 3 — Cup Purchase and Discount
 ```java
