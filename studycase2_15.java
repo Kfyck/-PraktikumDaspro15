@@ -64,7 +64,22 @@ public class studycase2_15 {
                 }
             }
 
-        
+        } else if (activityType.equalsIgnoreCase("Others")) {
+            System.out.print("Number of uploaded documents (0-4): ");
+            int documentCount = sc.nextInt();
+
+            System.out.println("Name: " + studentName);
+            System.out.println("Funding status: Not granted");
+
+            if (documentCount < 4) {
+                System.out.println("Missing documents: "
+                        + (4 - documentCount));
+            }
+
+        } else {
+            System.out.println("Invalid activity type.");
+        }
+        sc.close();
     }
 }
     
