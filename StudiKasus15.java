@@ -18,6 +18,18 @@ public class StudiKasus15 {
             diskon = 0;
         }
         totalBayar = totalHarga - diskon;
+        System.out.println("Discount: " + diskon);
+        System.out.println("Total price: " + totalHarga);
+        System.out.println("Total to pay: " + totalBayar); 
+        
+        if (totalHarga >= totalBayar) {
+            kembalian = totalHarga - totalBayar;
+            System.out.println("Here's your change, boss: " + kembalian);            
+        } else {
+            kurang = totalBayar - totalHarga;
+            System.out.println("Your money isn't enough, mate: " + kurang);
+        }
+        sc.close();
 
     }
 }
